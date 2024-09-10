@@ -1,0 +1,38 @@
+[
+    {
+        "content": "Hey, I remember that shak! What a pitiful sight it was, but man were those burgers good.",
+        "user_id": 1,
+        "blog_post_id": 1,
+        "date_created": "January 1, 2001"
+    },
+    {
+        "content": "the chum bucket is still better..",
+        "user_id": 3,
+        "blog_post_id": 1,
+        "date_created": "January 1, 2001"
+    },
+    {
+        "content": "I already know EXACTLY what sponge youre talking about LMAO",
+        "user_id": 1,
+        "blog_post_id": 2,
+        "date_created": "June 13, 2010"
+    },
+    {
+        "content": "Atta boy Larry! Now hows about you put those uh 'gains' to the test and finally start working security at the KK for me?",
+        "user_id": 2,
+        "blog_post_id": 3,
+        "date_created": "October 9, 2015"
+    },
+    {
+        "content": "NEVER! First of all, you should be less stingy and learn how to share. Secondly, I'm showing him this the very second he gets home. You sure do snort a lot like a PIG for someone whos supposed to be a CRAB!!!",
+        "user_id": 3,
+        "blog_post_id": 4,
+        "date_created": "February 21, 2019"
+    },
+    {
+        "content": "wowowow i love internet beef LOLOL",
+        "user_id": 1,
+        "blog_post_id": 4,
+        "date_created": "February 21, 2019"
+    }
+]
