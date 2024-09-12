@@ -72,7 +72,8 @@ router.get('/dashboard', confirmLogin, async (req, res) => {
         console.log(userDisplay);
         res.render('dashboard', {
             ...userDisplay,
-            logged_in: true
+            logged_in: true,
+            userId: req.session.user_id
         });
     }
     catch (err){
@@ -119,6 +120,23 @@ router.get('/create', confirmLogin, async (req, res) => {
         console.log(err);
         res.status(400).json(err);
     }
-})
+});
+
+router.get('/edit/:id', confirmLogin, async (req,res) => {
+    try{
+        const blogpost = await BlogPost.findByPk(req.params.id);
+        const blogPostDisplay = blogpost.get({plain: true});
+
+        res.render('edit', {
+            ...blogPostDisplay,
+            logged_in: req.session.logged_in,
+            userId: req.session.user_id
+        })
+    }
+    catch(err){
+        console.log(err);
+        res.status(400).json(err);
+    }
+});
 
 module.exports = router;
