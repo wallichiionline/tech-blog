@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>{{name}}'s Blog</h2>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col">
+        <a href="/create">Create New Post</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        {{#if blog_posts.length}}
+        {{#each blog_posts as |bp|}}
+        {{> blogPost blogPost=bp}}
+        {{/each}}
+        {{/if}}
+    </div>
+</div>
+</div>
