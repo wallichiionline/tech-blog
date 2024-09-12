@@ -1,9 +1,8 @@
 async function newCommentHandler(event){
     event.preventDefault();
 
-    const comment = document.getElementById('comment').value.trim();
-    const url = window.location.toString("/")[2];
-    const blogpostid = url[url.length - 1];
+    const comment = document.getElementById("comment").value.trim();
+    const blogpostid = document.getElementById("blogpostid").value;
 
     if(comment){
         const response = await fetch('/api/comments', {

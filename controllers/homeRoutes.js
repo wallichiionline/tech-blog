@@ -107,4 +107,18 @@ router.get('/blogPost/:id', confirmLogin, async (req, res) => {
     }
 });
 
+router.get('/create', confirmLogin, async (req, res) => {
+    try{
+        res.render('create', {
+            logged_in: req.session.logged_in,
+            userId: req.session.user_id,
+            username: req.session.username
+        });
+    }
+    catch (err){
+        console.log(err);
+        res.status(400).json(err);
+    }
+})
+
 module.exports = router;
